@@ -28,6 +28,12 @@ a {
     color: #d0aedc;
     text-decoration: none; }
 
+p {
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px; }
+
 header {
   border-bottom: 2px solid #53997B;
   padding: 30px 1.5625%;
@@ -61,14 +67,45 @@ header {
   max-width: 1440px;
   width: 100%; }
   .item-voting .items {
+    border: 1px solid #EDEDED;
     border-radius: 10px;
-    margin-bottom: 25px;
+    -webkit-box-shadow: 0 1px 7px 1px #EDEDED;
+    box-shadow: 0 1px 7px 1px #EDEDED;
+    margin-bottom: 40px;
     margin-right: 6.25%;
     overflow: hidden;
     position: relative;
     width: 29.16667%; }
     .item-voting .items:nth-child(3n) {
       margin-right: 0; }
+    .item-voting .items img {
+      width: 100%; }
+    .item-voting .items .item-info {
+      padding: 15px 15px; }
+    .item-voting .items h2 {
+      color: #386753;
+      margin-bottom: 20px; }
+    .item-voting .items .voting-set {
+      border-top: 1px solid #f2f2f2;
+      margin: 0 10px;
+      padding: 15px 5px;
+      text-align: left; }
+      .item-voting .items .voting-set .like-icon {
+        background-image: url("../images/heart.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        height: 30px;
+        vertical-align: middle;
+        width: 30px; }
+        .item-voting .items .voting-set .like-icon:hover {
+          cursor: pointer; }
+      .item-voting .items .voting-set .vote-count {
+        color: gray;
+        display: inline-block;
+        margin-left: 15px;
+        vertical-align: middle; }
 
 footer {
   padding: 30px 1.5625%;
